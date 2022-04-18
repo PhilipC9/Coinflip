@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top">
+      <nav class="headerNav">
+        <a class="headerName" href="">Coinflip</a>
+      </nav>
+      <div class="line"></div>
+    </div>
+    <div class="mainContainer">
+      <h2 id="won"></h2>
+      <div id="coin">
+        <div class="side black"><img src="./CoinBlack.png" alt="" /></div>
+        <div class="side red"><img src="./CoinRed.png" alt="" /></div>
+      </div>
+      <div class="ticketbox"><p class="ticket" id="ticket">Ticket:</p></div>
+      <h1>Select Coin</h1>
+      <div class="betContainer">
+        <div class="selectcoincontainer">
+          <div id="selectBlack">
+            <img
+              id="coinBlack"
+              class="selectcoinimg"
+              src="./CoinBlack.png"
+              alt=""
+            />
+          </div>
+          <div id="selectRed">
+            <img
+              id="coinRed"
+              class="selectcoinimg"
+              src="./CoinRed.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <p id="balance">Balance:</p>
+        <h3>Enter ammount to bet</h3>
+        <input type="text" id="ammount" placeholder="10$" />
+        <button class="btnBet" id="buttonBet" onclick="flip()">BET</button>
+      </div>
+    </div>
+  </body>
+</html>

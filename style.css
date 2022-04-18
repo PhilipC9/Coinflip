@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+body {
+  background: linear-gradient(90deg, #4b4b4b 0%, #2b2b2b 100%);
+  height: vh;
+  width: vw;
+}
+.top {
+  background-color: #333;
+  width: vw;
+  height: 45px;
+}
+
+.headerNav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerName {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  align-self: center;
+}
+
+.line {
+  width: vw;
+  height: 1px;
+  background-color: white;
+  box-shadow: whitesmoke 0px 0px 5px 1px;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: vw;
+  height: 600px;
+}
+
+#coin {
+  transform-style: preserve-3d;
+  position: relative;
+  margin-bottom: 25px;
+  width: 100px;
+  height: 100px;
+}
+.side {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  position: absolute;
+}
+.black {
+  display: flex;
+  z-index: 20;
+}
+.red {
+  display: flex;
+  transform: rotateX(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.btnBet {
+  width: 50%;
+  height: 20%;
+  border: 0px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.flipBlack {
+  animation: resultBlack 2s forwards;
+}
+.flipRed {
+  animation: resultRed 2s forwards;
+}
+
+@keyframes resultBlack {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1440deg);
+  }
+}
+
+@keyframes resultRed {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1620deg);
+  }
+}
+
+.ticketbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.betContainer {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.selectcoincontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 150px;
+  border: 1px;
+  border-color: rgba(255, 255, 255, 0.219);
+  border-style: solid;
+  box-shadow: rgba(245, 245, 245, 0.322) 0px 0px 5px 1px;
+}
+
+.selectcoinimg {
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 60px;
+  box-shadow: rgba(245, 245, 245, 0.322) 0px 0px 5px 1px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  padding-top: 10px;
+  font-size: 150%;
+  color: white;
+}
+
+h2 {
+  padding-bottom: 10px;
+  color: white;
+}
+
+h3 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#coinBlack {
+  border: 0px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 60px;
+}
+
+#coinRed {
+  border: 0px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 60px;
+}
+
+#ammount {
+  margin-bottom: 20px;
+  border: 0px;
+  border-color: white;
+  border-style: solid;
+  background-color: #636363;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 25%;
+  height: 10%;
+}
+
+#balance {
+  margin-top: 10px;
+  color: white;
+}
